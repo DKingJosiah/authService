@@ -1,0 +1,72 @@
+1. User Registration (Sign Up)
+Email + password signup
+Optional: phone number signup
+Validation (strong password rules)
+Duplicate account prevention
+
+2. Login (Authentication)
+Email/username + password
+Token-based auth (JWT or session)
+Remember me (optional)
+
+3. Token Management
+Access token (short-lived)
+Refresh token (long-lived)
+Token rotation
+Token revocation (logout)
+
+4. Logout
+Invalidate tokens
+Logout from:
+Current device
+All devices (important scenario)
+
+5. Email Verification
+Send verification email
+Verify account before access
+Resend verification link
+
+6. Password Management
+Forgot password (reset flow)
+Reset token expiry
+Change password (when logged in)
+
+7. Account Security
+Rate limiting (prevent brute force)
+Account lock after multiple failed logins
+CAPTCHA (optional but realistic)
+
+8. Role-Based Access Control (RBAC)
+Roles (admin, user, etc.)
+Permissions
+Route protection
+
+9. Multi-Device / Session Management
+Track active sessions
+Ability to:
+View logged-in devices
+Revoke specific sessions
+
+10. OAuth / Social Login (Optional but strong)
+Google login
+GitHub login
+
+👉 This is a strong senior-level addition.
+
+🔐 Advanced / Senior-Level Scenarios
+11. Two-Factor Authentication (2FA)
+OTP via email/SMS
+Authenticator apps (e.g. Google Authenticator)
+12. Audit & Logging
+Login attempts
+Password changes
+Suspicious activity
+13. Account Deactivation / Deletion
+Soft delete
+Hard delete (GDPR-style thinking)
+14. API Security
+Rate limiting per user/IP
+API key support (for integrations)
+15. Multi-Tenant Support (VERY senior)
+Users belong to organizations
+Same email can exist in different orgs
